@@ -1,5 +1,5 @@
 catcher
-============
+=======
 
 Neat lib, which makes your code nicer.
 
@@ -28,4 +28,3 @@ def function():
 @wrap.cat
 @wrap.chain
 ```
-
