@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/l0kix2/catcher.svg?branch=master)](https://travis-ci.org/l0kix2/catcher)
+
 catcher
 =======
 
