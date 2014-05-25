@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 import itertools
 
+import six
 import pytest
 
 from catcher import wrap
@@ -22,7 +23,6 @@ def test_in_list(func, output):
 @pytest.mark.parametrize('func, output', [
     (funcs.yield_sequence, [1, 2]),
     (funcs.yield_sequence_backwards, [1, 2]),
-    (funcs.yield_nones, [None, None]),
     (funcs.yield_never, []),
 ])
 @pytest.mark.parametrize('tested_func', [
@@ -60,7 +60,7 @@ def test_in_dict(func, output):
     wrap.in_odict,
 ])
 def test_in_odict(tested_func, func, output):
-    assert tested_func(func)().items() == output
+    assert list(six.iteritems(tested_func(func)())) == output
 
 
 @pytest.mark.parametrize('func, output', [
