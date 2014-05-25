@@ -3,8 +3,8 @@ catcher
 
 Neat lib, which makes your code nicer.
 
-```
-from catcher import wrap
+```(python)
+from catcher import wrap, calc, string
 
 @wrap.in_dict
 def function():
@@ -21,10 +21,10 @@ def function():
 @wrap.in_reversed_list
 @wrap.in_dict
 @wrap.in_odict
-@wrap.count
-@wrap.summarize
-@wrap.maximum
-@wrap.minimum
-@wrap.cat
 @wrap.chain
+@calc.count
+@calc.summarize
+@calc.maximum
+@calc.minimum
+@string.cat
 ```
