@@ -1,2 +1,4 @@
+sphinx
+alabaster
 six
 ordereddict

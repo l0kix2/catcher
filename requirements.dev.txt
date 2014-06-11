@@ -1,0 +1,3 @@
+-r requirements.docs.txt
+ipython
+ipdb
